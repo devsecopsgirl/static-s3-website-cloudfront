@@ -6,3 +6,10 @@ Do not forget to replace the variable `bucket_name` value with the bucket name y
 
 **NOTE**:
 The cloudfront URL will be available in the console/terminal once the script finishes. It is recommended to wait for 5 minutes to get the cloudfront distribution deployed successfully.
+
+**To run the script**
+`git clone https://github.com/devsecopsgirl/static-s3-website-cloudfront.git`
+
+`cd static-s3-website-cloudfront`
+
+`sh bashscript.sh`
