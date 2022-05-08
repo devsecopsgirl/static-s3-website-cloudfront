@@ -1,5 +1,5 @@
 # static-s3-website-cloudfront
 
-On Linux machine configure your AWS profile
+Before running the script, Please ensure that you have configured your AWS profile on your linux machine.
 
-Replace the S3 bitbucket name and region
+Do not forget to replace the variable 'bucket_name' with the bucket name you are creating.
