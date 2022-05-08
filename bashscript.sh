@@ -50,4 +50,11 @@ aws s3api put-bucket-policy --bucket $bucket_name --policy "{
 }"
 
 echo "Setting up cloudfront"
-aws cloudfront create-distribution --origin-domain-name $bucket_name.s3.us-east-1.amazonaws.com --default-root-object index.html
+echo "*****************************************"
+echo " "
+echo " "
+echo " "
+echo "Browse the URL in few minutes as it takes some time to get deployed"
+#aws cloudfront create-distribution --origin-domain-name $bucket_name.s3.us-east-1.amazonaws.com --default-root-object index.html
+
+aws cloudfront create-distribution --origin-domain-name $bucket_name.s3.us-east-1.amazonaws.com --default-root-object index.html > result.json && cat result.json | grep "DomainName" | head -1 | cut -c 10-60 | tr -d '"' | tr -d ','
